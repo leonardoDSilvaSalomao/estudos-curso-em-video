@@ -1,0 +1,363 @@
+HTML5
+
+<!DOCTYPE html> - Não Faz muita coisa, apenas expecifica qual tipo de documento vamos declarar é HTML5. Além do mas, não é uma tag, mas todo documento HTML deve começar com essa declaração.
+
+html - 
+	ex.:
+		<html>
+
+		</html>
+
+	Observa-se que a tag html é composta por alguns atributos extras.
+	lang - Usado para declarar o idioma da página
+
+head - Onde fica armazenado todas as imformações do documento.
+	ex.:
+	    	<html>
+		<head>
+		
+		</head>
+		</html>
+
+body - É a parte onde será entroduzido todo o conteúdo do documento. Esse é o corpo de nosso documento HTML5.
+	ex.:
+		<!DOCTYPE html>
+		<html>
+		<body>
+		
+		<body>
+		</htm>
+		
+Title - Esta tag é ultilizada para dar nome a nossa página web, ou seja o titulo.
+	ex.:
+		<html>
+		<head>
+		<title>Teste de Titúlo</title>
+		</head>
+		</html>
+h1 - É utilizada para titulos e subtitulos pode variar des h1 que é o mais importante a h6 que é o menos importante.
+	ex.:
+		<html>
+		<body>
+		<h1>Titulo de nivel 1</h1>
+		<h2>Titulo de nivel 2</h2>
+		<h3>Titulo de nivel 3</h3>
+		<h4>Titulo de nivel 4</h4>
+		<h5>Titulo de nivel 5</h5>
+		<h6>Titulo de novel 6</h6>
+		</body>
+		</html>
+
+p - Define um paragrafo para o documento.
+	ex.:
+		<html>
+		<body>
+		<p>Este é um paragrafo</p>
+		</body>
+		</html>
+
+br - Adciona uma quebra de linha, ou seja, ao acrescentar essa tag em um ponto do documento ela forçara a uma quebra de linha.
+	ex.:
+		<html>
+		<body>
+		<p>Vamos quebrar <br>
+		a linha.
+		</p>
+		</body>
+		</hml>
+
+a - Está tag iremos usar quando quisermos adicionar um hiperlink tanto externo quanto interno em nossa pagina. Tanbem é possiver fazer o mesmo procedimento em outas páginas do documento.
+	ex.:
+		<html>
+		<body>
+		<a href="https://www.w3...com">Este é um link</a>
+		</body>
+		</html>
+
+	Observa-se que a tag <a> é composta por alguns atributos extras.
+
+	hrf - Para especificar a URL da página para qual o link nos transferirar.
+		mailto: - Para criar um link que abra o programa de e-mail do usuario.
+	target - Especifica onde abrir o documento vinculado.
+		_self - Abre o documento na mesma janela em que foi clicado.
+		_blank - Abre o doment o em uma nova janela.
+		_parent - Abre o documento no quadro pai.
+		_top - Abre o documento em todo o corpo da janela.
+
+img - Para adiconar imagens usamos essa tag.
+	ex.:
+		<html>
+		<body>
+		<img src="w3...jpg" alt="w3...." usemap="#TESTE" width="104" height="142"
+	
+	Observa-se que a tag <img> é composta por alguns atributos extras.
+	
+	src - Este é o endereço do arquivo da imagem requerida
+	alt - Este é para especificar um texto alternativo
+	width - Define a largura da imagen.
+	height - Define a altura da imagen.
+	usemap - Usado para apontar um mapa de imagem. Deve sempre começar com #TESTE.
+
+map -Elemento usado para definir um mapa de imagem.
+	ex.:
+		<map name="TESTE">
+ 
+    		</map>
+
+	Observa-se que a tag <map> é composta por alguns atributos extras.	
+
+	name - Usado para vincular mapa a imagem, deve conter o mesmo nome inserido na tag usemap.
+
+area - Para definir uma area clicavel no mapa de imagem.
+	ex.:
+		<map name="teste">
+        	<area shape="rect" coords="76, 113, 490, 425" href="index.html" alt="TESTE">
+    		</map>
+	
+	Observa-se que a tag <area> é composta por alguns atributos extras.
+
+	shape - Definir a forma clicavel
+		rect - Define uma região retangular
+		circle - Define uma região circular
+		poly - Define uma região poligonal
+		default - Define toda região
+
+picture - Define um bloco para varios formatos de imagem.
+	ex.:
+		<picture>
+        	<source media="(min-width: 450px )" srcset="TESTE.png">
+        	<source media="(min-width: 450px)" srcset="TESTE.jpg">
+        	<img src="TESTE.gif" alt="TESTE">
+    		</picture>
+source - 
+	ex.:
+		<picture>
+        	<source media="(min-width: 450px )" srcset="TESTE.png">
+        	<source media="(min-width: 450px)" srcset="TESTE.jpg">
+        	<img src="TESTE.gif" alt="TESTE">
+    		</picture>
+
+	Observa-se que a tag <source> é composta por alguns atributos extras.
+
+	media - Para definir qual formato de imagem é mais adequada.
+	srcset - Para se referir a diferentes formatos de imagens.
+hr - Usado para separar o conteudo adicionando uma linha horizontal.
+	ex.:
+		<body>
+		<p>Paragrafo 1</p>
+		<hr> //adicionau um linha!
+		<p>Paragrafo 2</p>
+		</body>
+
+pre - O conteudo exibido é mantido quase que horiginal, apenas adiciona uma fonte mas preserve espaços e quebras de linha, deixando asim o texto pré formatado.
+		ex.:
+			<body>
+				<pre>
+					Paragrafo 1
+		
+					Paragrafo 2
+				</pre>
+			</body>
+
+
+strong - Texto importante / b - Texto em negrito 
+		ex.:
+			<body>
+			<p><strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Aliquam tenetur vero id hic illum aut libero, dignissimos voluptas? Alias recusandae, fuga distinctio sed voluptas possimus aliquam sit blanditiis a! Doloribus.</p>
+			</body>	
+
+i - Texto em itálico / em - Texto enfatizado
+		
+		ex.:
+			<body>
+			<p><em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit. Aliquam tenetur vero id hic illum aut libero, dignissimos voluptas? Alias recusandae, fuga distinctio sed voluptas possimus aliquam sit blanditiis a! Doloribus.</p>
+			</body>	
+
+mark - Define um texto para ser marcado ou destacado
+		ex.:
+			<body>
+			<p><mark>Lorem ipsum</mark> dolor sit amet consectetur adipisicing elit. Aliquam tenetur vero id hic illum aut libero, dignissimos voluptas? Alias recusandae, fuga distinctio sed voluptas possimus aliquam sit blanditiis a! Doloribus.</p>
+			</body>
+
+small - Define um texto pequeno
+		ex.:
+			<body>
+			<p><small>Lorem ipsum</small> dolor sit amet consectetur adipisicing elit. Aliquam tenetur vero id hic illum aut libero, dignissimos voluptas? Alias recusandae, fuga distinctio sed voluptas possimus aliquam sit blanditiis a! Doloribus.</p>
+			</body>
+
+del - Define um texto que foi excluido de um documento.
+		ex.:
+			<body>
+			<p><del>Lorem ipsum</del> dolor sit amet consectetur adipisicing elit. Aliquam tenetur vero id hic illum aut libero, dignissimos voluptas? Alias recusandae, fuga distinctio sed voluptas possimus aliquam sit blanditiis a! Doloribus.</p>
+			</body>
+
+ins - Define um texto que foi inserido em um dcumento.
+		ex.:
+			<body>
+			<p><ins>Lorem ipsum</ins> dolor sit amet consectetur adipisicing elit. Aliquam tenetur vero id hic illum aut libero, dignissimos voluptas? Alias recusandae, fuga distinctio sed voluptas possimus aliquam sit blanditiis a! Doloribus.</p>
+			</body>
+
+sub - Define um meio caractere abaixo da linha, ou seja, um texto subscrito
+		ex.:
+			<body>
+			<p><sub>Lorem ipsum</sub> dolor sit amet consectetur adipisicing elit. Aliquam tenetur vero id hic illum aut libero, dignissimos voluptas? Alias recusandae, fuga distinctio sed voluptas possimus aliquam sit blanditiis a! Doloribus.</p>
+			</body>
+
+<sup>-  Define um meio caractere acima da linha, ou seja, um texto sobrescrito
+		ex.:
+			<body>
+			<p><sup>Lorem ipsum</sup> dolor sit amet consectetur adipisicing elit. Aliquam tenetur vero id hic illum aut libero, dignissimos voluptas? Alias recusandae, fuga distinctio sed voluptas possimus aliquam sit blanditiis a! Doloribus.</p>
+			</body>
+
+blockquote - Define uma citação de uma fonte externa.
+		
+		ex.:
+			<p>Lorem:</p>
+			<blockquote cite="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tenetur vero id hic illum aut libero, dignissimos voluptas? Alias recusandae, fuga distinctio sed voluptas possimus aliquam sit blanditiis a! Doloribus."
+			</blockquote>
+
+q - Usa-se para citações curtas.
+		ex.:
+			<p>Lorem= <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tenetur vero id hic illum aut libero, dignissimos voluptas? Alias recusandae, fuga distinctio sed voluptas possimus aliquam sit blanditiis a! Doloribus.</q></p>
+
+abbr - Para definir uma abreviação.
+		ex.:
+			<p><abbr title="hyper text marcup language">HTML</abbr></p>
+
+address - Define as informações do proprietariode um documento ou arquivo.
+		ex.:
+			<address>l.d.dasilva1999@gmail.com</address>
+
+cite - Define um titulo de uma obra criativa.
+		ex.:
+			<p><cite>A volta dos que não forão</cite>Por min</p>
+
+bdo - É usada para substituir a direção do texto.
+		ex.:
+			<bdo dir="rtl">Direita para esquerda</bdo>
+
+ style - Usado para adicionar estilos in-line/interno
+
+link - Para se referir a um documento CSS
+
+table - Para definir uma tabela
+
+td - Dados da tabela
+
+tr - Linha da tabela
+
+th - Cabeçalho da tabela
+
+caption - Para adicionar uma legenda a uma tabela.
+
+ul - Lista não ordenada
+
+ol - Lista ordenada
+
+li - Item de lista
+
+dl - Lista de descrição
+
+dt - Define o nome
+
+dd - Descreve o termo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Atributos
+title- Usado para adicionar uma imformção extra ao passar o mause.
+	
+	ex.:
+		<body>
+		<p title="Isso é uma imformação extra!">Paragrafo</p>
+		</body>
+
+style - Usado para dar estilos a um elemento.
+
+	ex.:
+		<body>
+		<p style="color:red;">Paragrafo</p>
+		</body>
+
+src - Este é o endereço do arquivo de mídia requerido
+
+alt - Este é para especificar um texto alternativo
+
+width - Define a largura da imagen.
+
+height - Define a altura da imagen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS
