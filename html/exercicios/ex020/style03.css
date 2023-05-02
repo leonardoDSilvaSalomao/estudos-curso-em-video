@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-element
+    > = children
+*/
+
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+}
+
+a::after {
+    content: '[link]';
+    text-decoration: none;
+}
